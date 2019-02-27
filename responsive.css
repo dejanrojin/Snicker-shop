@@ -1,0 +1,224 @@
+@media only screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden; }
+  @-webkit-keyframes gradoviup {
+    100% {
+      margin-top: 234px; } }
+  @keyframes gradoviup {
+    100% {
+      margin-top: 234px; } }
+  @-webkit-keyframes gradoviup1 {
+    100% {
+      margin-top: 234px; } }
+  @keyframes gradoviup1 {
+    100% {
+      margin-top: 234px; } }
+  @-webkit-keyframes gradoviup2 {
+    100% {
+      margin-top: 234px; } }
+  @keyframes gradoviup2 {
+    100% {
+      margin-top: 234px; } }
+  #bigimage1 {
+    width: 690px;
+    height: 520px;
+    position: absolute;
+    margin-left: 340px !important;
+    background-size: 100%; }
+  #bigimage2 {
+    width: 690px;
+    height: 520px;
+    position: absolute;
+    margin-left: 340px !important;
+    background-size: 100%; }
+  #bigimage3 {
+    width: 690px !important;
+    height: 520px;
+    position: absolute;
+    margin-left: 340px !important;
+    background-size: 100% !important; }
+  #bigimage4 {
+    width: 690px !important;
+    height: 520px;
+    position: absolute;
+    margin-left: 340px !important;
+    background-size: 100% !important; }
+  #bigimage5 {
+    width: 690px !important;
+    height: 520px;
+    position: absolute;
+    margin-left: 340px !important;
+    background-size: 100% !important; }
+  #bigimage6 {
+    width: 690px !important;
+    height: 520px;
+    position: absolute;
+    margin-left: 340px !important;
+    background-size: 100% !important; }
+  div#changecolor {
+    display: -webkit-box;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 770px; }
+  div#info {
+    font-size: 20px;
+    color: #eee;
+    margin-left: 650px; }
+  div#searchfield {
+    margin-left: 770px; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden; }
+  p#producttitle {
+    font-size: 35px; }
+  p#producttitle1 {
+    font-size: 35px; }
+  p#producttitle2 {
+    font-size: 35px; }
+  #bigimage1 {
+    width: 690px;
+    height: 520px;
+    position: absolute;
+    margin-left: 80px !important;
+    background-size: 100%; }
+  #bigimage2 {
+    width: 690px;
+    height: 520px;
+    position: absolute;
+    margin-left: 65px !important;
+    background-size: 100%; }
+  #bigimage3 {
+    width: 690px !important;
+    height: 520px;
+    position: absolute;
+    margin-left: 100px !important;
+    background-size: 100% !important; }
+  #bigimage4 {
+    width: 690px !important;
+    height: 520px;
+    position: absolute;
+    margin-left: 90px !important;
+    background-size: 100% !important; }
+  #bigimage5 {
+    width: 690px !important;
+    height: 520px;
+    position: absolute;
+    margin-left: 85px !important;
+    background-size: 100% !important; }
+  #bigimage6 {
+    width: 690px !important;
+    height: 520px;
+    position: absolute;
+    margin-left: 95px !important;
+    background-size: 100% !important; }
+  @-webkit-keyframes gradoviup {
+    100% {
+      margin-top: 244px; } }
+  @keyframes gradoviup {
+    100% {
+      margin-top: 244px; } }
+  @-webkit-keyframes gradoviup1 {
+    100% {
+      margin-top: 244px; } }
+  @keyframes gradoviup1 {
+    100% {
+      margin-top: 244px; } }
+  @-webkit-keyframes gradoviup2 {
+    100% {
+      margin-top: 244px; } }
+  @keyframes gradoviup2 {
+    100% {
+      margin-top: 244px; } }
+  div#changecolor {
+    margin-left: 500px; }
+  input#name {
+    font-size: 20px;
+    width: 200px; }
+  input#surname {
+    font-size: 20px;
+    width: 200px; }
+  textarea#textareas {
+    font-size: 20px;
+    width: 200px; }
+  button#btn {
+    width: 205px; }
+  div#info {
+    font-size: 20px;
+    color: #eee;
+    margin-left: 480px; } }
+
+@media only screen and (max-width: 614px) {
+  body {
+    overflow-x: hidden; }
+  body {
+    overflow-y: hidden; }
+  p#producttitle {
+    font-size: 25px; }
+  p#producttitle1 {
+    font-size: 25px; }
+  p#producttitle2 {
+    font-size: 25px; }
+  #bigimage1 {
+    background-repeat: no-repeat;
+    width: 400px !important;
+    margin-left: 10px !important; }
+  #bigimage2 {
+    background-repeat: no-repeat;
+    width: 400px !important;
+    margin-left: 5px !important; }
+  #bigimage3 {
+    background-repeat: no-repeat !important;
+    width: 400px !important;
+    margin-left: 10px !important; }
+  #bigimage4 {
+    background-repeat: no-repeat !important;
+    width: 400px !important;
+    margin-left: 10px !important; }
+  #bigimage5 {
+    background-repeat: no-repeat !important;
+    width: 400px !important;
+    margin-left: 10px !important; }
+  #bigimage6 {
+    background-repeat: no-repeat !important;
+    width: 400px !important;
+    margin-left: 10px !important; }
+  div#textspace {
+    margin-top: 160px; }
+  div#changecolor {
+    margin-top: 0px;
+    margin-left: 50px; }
+  @-webkit-keyframes gradoviup {
+    100% {
+      margin-top: 44px; } }
+  @keyframes gradoviup {
+    100% {
+      margin-top: 44px; } }
+  @-webkit-keyframes gradoviup1 {
+    100% {
+      margin-top: 44px; } }
+  @keyframes gradoviup1 {
+    100% {
+      margin-top: 44px; } }
+  @-webkit-keyframes gradoviup2 {
+    100% {
+      margin-top: 44px; } }
+  @keyframes gradoviup2 {
+    100% {
+      margin-top: 44px; } }
+  div#formular {
+    margin-left: -45px; }
+  div#info {
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 10px; }
+  p#email {
+    font-size: 17px; }
+  p#phone {
+    font-size: 17px; }
+  img#slika {
+    width: 30px;
+    height: 30px;
+    float: left; }
+  img#slika {
+    display: none; } }

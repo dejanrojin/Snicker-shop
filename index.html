@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+	
+	
+   
+   
+<link rel="stylesheet" href="mysomesite.css">
+<link rel="stylesheet" href="responsive.css">
+   
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+	
+
+$(document).ready(function(){
+
+
+
+
+$("#second").click(function(){
+
+
+
+$("#secondtab").fadeIn("fast",function(){
+
+$(this).css({"display":"block"})
+
+
+})
+
+
+$("#firsttab").fadeOut("fast",function(){
+
+$(this).css({"display":"none"})
+
+
+})
+
+
+$("#threetab").fadeIn("fast",function(){
+
+$(this).css({"display":"none"})
+
+
+})
+
+
+
+})
+
+
+
+
+
+
+$("#first").click(function(){
+
+
+$("#bigimage5").addClass('stop');
+
+$("#secondtab").fadeOut(700,function(){
+
+$(this).css({"display":"none"})
+
+
+})
+
+
+
+$("#threetab").fadeIn("fast",function(){
+$(this).css({"display":"none"})
+
+
+})
+
+
+$("#firsttab").fadeIn("fast",function(){
+
+$(this).css({"display":"block"})
+
+
+})
+
+
+
+
+
+})
+
+
+
+
+
+
+
+
+$("#three").click(function(){
+$("#bigimage5").removeClass('stop');
+$("#threetab").fadeIn("fast",function(){
+
+$(this).css({"display":"block"})
+
+
+})
+
+
+
+$("#firsttab").fadeIn("fast",function(){
+
+$(this).css({"display":"none"})
+
+
+})
+
+
+
+
+
+$("#secondtab").fadeOut("fast",function(){
+
+$(this).css({"display":"none"})
+
+
+})
+
+
+
+
+})
+
+
+
+
+
+
+
+
+
+$("#four").click(function(){
+$("#bigimage5").removeClass('stop');
+
+
+$("#fourtab").fadeIn("fast",function(){
+
+$(this).css({"display":"block"})
+
+
+})
+
+$("#threetab").fadeIn("fast",function(){
+
+$(this).css({"display":"none"})
+
+
+})
+
+
+
+$("#firsttab").fadeIn("fast",function(){
+
+$(this).css({"display":"none"})
+
+
+})
+
+
+
+
+
+$("#secondtab").fadeOut("fast",function(){
+
+$(this).css({"display":"none"})
+
+
+})
+
+
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+$("#red").click(function(){
+
+
+$("#bigimage2").addClass('red');
+
+
+$("#bigimage1").addClass('braunno');
+
+
+
+
+
+})
+
+
+
+$("#brown").click(function(){
+
+$("#bigimage1").removeClass('braunno');
+
+
+$("#bigimage2").removeClass('red');
+})
+
+
+
+
+
+
+
+
+
+
+
+$("#red1").click(function(){
+
+
+$("#bigimage4").addClass('red1');
+
+
+$("#bigimage3").addClass('braunno1');
+
+
+
+
+
+})
+
+
+
+$("#brown1").click(function(){
+
+
+
+$("#bigimage3").removeClass('braunno1');
+
+
+$("#bigimage4").removeClass('red1');
+})
+
+
+
+
+
+
+
+
+
+
+
+$("#red2").click(function(){
+
+
+$("#bigimage6").addClass('red2');
+
+
+$("#bigimage5").addClass('braunno2');
+
+
+
+
+
+})
+
+
+
+$("#brown2").click(function(){
+
+
+
+$("#bigimage5").removeClass('braunno2');
+
+
+$("#bigimage6").removeClass('red2');
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+var gradovi=$("#gradovi");
+
+$("#gradovi").one("click",function(){
+
+var text="";
+var text2="";
+$("#textprodavnice").hide();
+
+$.ajax({
+url: "http://www.json-generator.com/api/json/get/cqqpwLzyle?indent=2",
+type:'post',
+dataType:'json',
+beforeSend:function(){
+
+$("div#gradovi").addClass("background");
+
+
+},
+
+
+success:function(data){
+
+data.forEach(function(e,i){
+
+text+="<p id='spisakgradova'>"+e.nm+"</p>";
+text2+="<p id='spisakgradova'>"+e.nm2+"</p>";
+
+
+gradovi.append(text+""+text2);
+
+})
+
+
+
+
+},
+
+complete:function(){
+
+$("#gradovi").removeClass("background");
+
+$("#gradovi").addClass("background2");
+
+}
+
+
+
+})
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+var gradovi1=$("#gradovi1");
+
+$("#gradovi1").one("click",function(){
+
+var text3="";
+var text4="";
+$("#textprodavnice1").hide();
+
+$.ajax({
+url: "http://www.json-generator.com/api/json/get/cetwIETwAy?indent=2",
+type:'post',
+dataType:'json',
+beforeSend:function(){
+
+$("div#gradovi1").addClass("background1");
+
+
+},
+
+
+success:function(data1){
+
+data1.forEach(function(e,i){
+
+text3+="<p id='spisakgradova2'>"+e.nm3+"</p>";
+text4+="<p id='spisakgradova2'>"+e.nm4+"</p>";
+
+
+gradovi1.append(text3+""+text4);
+
+})
+
+
+
+
+},
+
+complete:function(){
+
+$("#gradovi1").removeClass("background1");
+
+$("#gradovi1").addClass("background3");
+
+}
+
+
+
+})
+
+})
+
+
+
+
+
+
+
+
+
+
+var gradovi2=$("div#gradovi2");
+
+$("div#gradovi2").one("click",function(){
+
+var text5="";
+var text6="";
+$("#textprodavnice2").hide();
+
+$.ajax({
+url: "http://www.json-generator.com/api/json/get/bQjHpdUWwi?indent=2",
+type:'post',
+dataType:'json',
+beforeSend:function(){
+
+$("div#gradovi2").addClass('plavapozadina');
+
+
+},
+
+
+success:function(data2){
+
+data2.forEach(function(e,i){
+
+text5+="<p id='spisakgradova2'>"+e.nm5+"</p>";
+text6+="<p id='spisakgradova2'>"+e.nm6+"</p>";
+
+
+gradovi2.append(text5+""+text6);
+
+})
+
+
+
+
+},
+
+complete:function(){
+
+$("div#gradovi2").removeClass("plavapozadina");
+
+$("div#gradovi2").addClass("nijeplava");
+
+}
+
+
+
+
+
+})
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$("#search").on("click",function(){
+
+$(".inputText").fadeToggle("slow");
+
+
+
+
+
+
+
+})
+
+$("#btn").click(function(){
+
+
+$("#message").fadeIn("slow",function(){
+
+$("#message").fadeOut("slow");
+
+
+});
+
+})
+
+
+
+
+$("#name").focusout(function(){
+
+check_user();
+
+
+})
+
+$("#name").focusin(function(){
+
+$("#name").val("");
+
+
+})
+
+
+function check_user(){
+var nameval=$("#name").val().length;
+
+if(nameval < 1 ){
+
+$("#name").val("Must fill field").css({ "color":"#f3f3f3","font-style":"italic"  });
+
+}
+}
+
+
+
+
+$("input#surname").focusin(function(){
+
+$("input#surname").val("");
+
+
+})
+
+$("input#surname").focusout(function(){
+
+check_email();
+
+
+})
+
+		
+function check_email(){
+var surename=$("#surname").val().length;
+		var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+	
+		if(!pattern.test($("input#surname").val())) {
+			$("input#surname").val("Invalid email").css({ "color":"#f3f3f3","font-style":"italic"  });
+		}
+	
+	}
+
+
+	
+	
+	
+	
+$("textarea#textareas").focusout(function(){
+
+check_text();
+
+
+})
+
+$("textarea#textareas").focusin(function(){
+
+$("textarea#textareas").val("");
+
+
+})
+
+
+function check_text(){
+var nameval=$("textarea#textareas").val().length;
+
+if(nameval < 1 ){
+
+$("textarea#textareas").val("Must fill field").css({ "color":"#f3f3f3","font-style":"italic"  });
+
+}
+}	
+	
+	
+
+
+
+})
+
+
+	
+
+	
+	
+	
+	
+	
+	</script>
+	
+	
+	<style>
+
+	
+	
+
+	</style>
+	<title>Nike armax</title>
+    </head>
+   <body >
+   
+  
+   
+   <div id="loader"></div>
+   
+ 
+ <div id="mavbar">
+  
+   <nav>
+   
+   <div id="logo"></div>
+   <ul>
+   
+   <li ><a href="#" id="first" >MEN</a></li>
+    <li><a href="#" id="second"  >WOMEN</a></li>
+    <li> <a href="#" id="three">KIDS</a></li>
+    <li ><a href="#" id="four">CONTACT</a></li>
+	 
+	
+   </ul>
+   </nav>
+   
+ <div id="searchfield"> <input class="inputText" /><span class="floating-label">Search...</span><div id="search"> </div> </div>
+   
+   </div>
+ 
+ 
+   
+  <div id="firsttab">
+
+  
+  
+  <div id="textandimages"> 
+ <div id="textspace">  
+<p id="text">NIKE AIR</p>
+<p id="producttitle">VAPORMAX</p>
+<p id="price">$199</p>  
+ 
+</div> 
+ <div id="bigimage1"></div> 
+   <div id="bigimage2"></div>
+   
+ </div> 
+  
+  <div id="gradovi"><p id="textprodavnice">PRODAVNICE?</p></div>
+  <div id="changecolor"><p id="select">SELECT COLOR</p><p id="brown"></p><p id="red"></p></div>
+  
+  
+  </div>
+  
+  
+    <div id="secondtab">
+	
+	
+	
+  <div id="textandimages"> 
+ <div id="textspace">  
+<p id="text">NIKE WOMEN AIR</p>
+<p id="producttitle1">WOMEN MAX</p>
+<p id="price">$129</p>  
+ 
+</div> 
+
+<div id="bigimage3"></div> 
+   <div id="bigimage4"></div>
+   
+ </div> 
+  
+  <div id="gradovi1"><p id="textprodavnice1">PRODAVNICE?</p></div>
+  <div id="changecolor"><p id="select">SELECT COLOR</p><p id="brown1"></p><p id="red1"></p></div> 
+
+  </div>
+  
+    <div id="threetab">
+	
+	
+
+
+  <div id="textandimages"> 
+ <div id="textspace">  
+<p id="text">NIKE KID SNICKERS</p>
+<p id="producttitle2">KIDS AIR MAX</p>
+<p id="price">$159</p>  
+ 
+</div> 
+
+<div id="bigimage5"></div> 
+   <div id="bigimage6"></div>
+   
+ </div> 
+  
+  <div id="gradovi2"><p id="textprodavnice2">PRODAVNICE?</p></div>
+  <div id="changecolor"><p id="select">SELECT COLOR</p><p id="brown2"></p><p id="red2"></p></div> 
+
+	
+   
+
+  </div>
+    <div id="fourtab">
+	
+	
+	
+ <div id="formular"> 
+
+<form>
+
+<input id="name"  /><span class="floating-label1">Name</span><br>
+<input id="surname"   /><span class="floating-label2">Email</span><br>
+<textarea id="textareas" col="6" rows="6"></textarea>
+<br>
+<button id="btn">Send</button>
+<p id="message">E-mail sent :)</p>
+</form>
+
+  </div>
+
+  
+ <div id="info"> 
+
+<img id="slika" width="50" height="50" src="imgs/email.png"/><p id="email">nikesnick@gmail.com</p>
+<img id="slika" width="50" height="50" src="imgs/phone.png"/> <p id="broj">+3818411341</p>
+ 
+ 
+<div id="sponsored">
+<div id="holder">
+<img width="60" height="60" src="imgs/sportshop.png"/>
+<img width="60" height="60" src="imgs/planetshop.png"/>
+<img width="60" height="60" src="imgs/sportvision.png"/>
+<img width="60" height="60" src="imgs/tref.png"/>
+</div>
+</div> 
+ 
+ 
+ 
+  </div>  
+  
+  
+  
+  </div>
+   
+    </body>
+</html>
